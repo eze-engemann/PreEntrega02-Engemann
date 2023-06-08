@@ -1,0 +1,379 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+/* header logo y navbar*/
+header{
+    background-color: rgba(255, 153, 0, 0.6);
+
+}
+.logo{
+    height: 115px;
+    margin-left: 20px;
+}
+
+.titular{
+    font-family: 'Poppins';
+}
+
+.menu:hover{
+    color: whitesmoke;
+}
+
+/*barra de busqueda*/
+
+main{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+span ul li{
+    list-style: none;
+    background-color: rgba(255, 153, 0, 0.6);
+    display: inline-block;
+    font-family: 'lato';
+    border-radius: 22px;
+    padding: 0.2rem;
+}
+
+/*barra busqueda nueva*/
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .search-input {
+   
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  
+  .search-button {
+    background-color: rgba(255, 153, 0, 0.6);
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .lupa{
+    height: 23px;
+  }
+/*viandas diarias y congeladas - index*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.item-index{
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.item-index:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item-index .img-index{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-index figure{
+    overflow: hidden;
+}
+
+.item-index:hover .img-index{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ingresar{
+    text-decoration: none;
+    text-align: center;
+}
+
+.info-product .ingresar{
+    border: none;
+    background: none;
+    background-color: #30A2FF;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+
+/* texto viandas congeladas y del dia */
+
+h1{
+    font-family: 'poppins';
+    text-align: center;
+}
+
+h1 a{
+    text-decoration: transparent;
+    color: black;
+}
+
+/*catalogo viandasdia.html*/
+
+.catalogo-viandas{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    background: #ebebeb;
+    
+}
+
+.item-viandas{
+    list-style-type: none;
+    width: 250px; 
+    height: 465px; 
+    border-radius: 10px;
+    margin: 5px;
+    background: #fff;
+}
+
+.item-viandas:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.lista-viandas{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.img-catalogo{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenedor-linea{
+    display: flex;
+    justify-content: center;
+}
+
+.linea{
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.nombre-vianda{
+    font-size: 1.5rem;
+}
+.menu-style{
+    color: #333;
+}
+
+.container-mas {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.icon-mas {
+    width: 25px;
+}
+
+
+.precio-producto{
+    display: flex;
+    justify-content: center;
+}
+
+.select-cant{
+    width: 30px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+.añadir-carrito{
+    padding: 10px 20px;
+    border: none;
+    background-color: #30A2FF;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.añadir-carrito:hover{
+    transform: scale(1.05);
+}
+
+/*html mas info*/
+
+.main-info{
+    background-image: url("../img/menu-ketoo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    
+}
+
+.lista-info{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: -800px;
+    padding: 62px 35px 90px;
+}
+
+.item-info{
+    list-style-type: none;
+    width: 600px; 
+    height: 320px; 
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.estrellas{
+    height: 4%;
+    width: 4%;
+}
+
+h3{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'poppins';
+    font-size: 24px;
+}
+
+.estrella-califica{
+    width: 25px;
+}
+
+.data-masinfo{
+   display: flex;
+   padding: 5px 35px 5px;
+}
+
+.texto-masinfo{
+    font-size: 20px;
+    padding: 5px 15px 5px ;
+}
+
+.peso-total{
+    padding: 5px 15px 10px;
+}
+.califica{
+    border-color:#c0c0c0;
+    border-radius:44px;
+    border-style:solid;
+    border-width: 2px;
+    font-size:18px;
+    font-weight:700;
+    line-height:26px;
+    padding:8px 16px 6px;
+    text-align:center;
+    transition: background-color 0.3s;
+}
+
+.califica:hover {
+    background-color: rgba(255, 153, 0, 0.6);
+}
+
+/*Registro y compra*/
+
+.main-registrocompra{
+    background-image: url("../img/fondo-gral.png");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-basis: 50%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+.formulario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    }
+
+.formulario label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.formulario input[type="text"], 
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.formulario input[type="submit"] {
+    background-color: transparent;
+    color: #2f6178;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-color: #2f6178;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgba(255, 153, 0, 0.6);
+    color: white;
+}
+
+
+/* mq */
+
+@media screen and (min-width:1024px){
+
+}
