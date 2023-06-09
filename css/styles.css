@@ -17,7 +17,6 @@ header{
 }
 .logo{
     height: 115px;
-    margin-left: 20px;
 }
 
 .titular{
@@ -77,7 +76,7 @@ span ul li{
 /*viandas diarias y congeladas - index*/
 .container-items{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -92,7 +91,7 @@ span ul li{
 
 .item-index .img-index{
     width: 100%;
-    height: 300px;
+    height: 230px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
@@ -107,11 +106,10 @@ span ul li{
 }
 
 .info-product{
-    padding: 15px 30px;
+    padding: 5px 31px;
     line-height: 2;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 .ingresar{
@@ -124,7 +122,6 @@ span ul li{
     background: none;
     background-color: #30A2FF;
     color: #fff;
-    padding: 15px 10px;
     cursor: pointer;
 }
 
@@ -155,8 +152,8 @@ h1 a{
 
 .item-viandas{
     list-style-type: none;
-    width: 250px; 
-    height: 465px; 
+    width: 310px;
+    height: 560px;
     border-radius: 10px;
     margin: 5px;
     background: #fff;
@@ -169,7 +166,7 @@ h1 a{
 .lista-viandas{
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     margin-top: 0px;
@@ -177,7 +174,7 @@ h1 a{
 
 .img-catalogo{
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -248,7 +245,7 @@ h1 a{
     background-image: url("../img/menu-ketoo.jpg");
     background-size: cover;
     background-position: center;
-    height: 800px;
+     height: 790px;
     
 }
 
@@ -256,14 +253,14 @@ h1 a{
     box-sizing: border-box;
     text-align: center;
     margin-top: 0px;
-    margin-left: -800px;
+    margin-left: -15px;
     padding: 62px 35px 90px;
 }
 
 .item-info{
     list-style-type: none;
-    width: 600px; 
-    height: 320px; 
+    width: 366px;
+    height: 368px;
     border-radius: 10px;
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -292,8 +289,8 @@ h3{
 }
 
 .texto-masinfo{
-    font-size: 20px;
-    padding: 5px 15px 5px ;
+    font-size: 18px;
+    padding: 5px 0px 4px;
 }
 
 .peso-total{
@@ -382,6 +379,59 @@ h3{
 
 /* mq */
 
-@media screen and (min-width:1024px){
+/*index*/
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
 
+.container-items{
+    grid-template-columns: repeat(2, 1fr);
 }
+
+.item-index .img-index{
+    height: 300px;
+}
+
+.info-product{
+    padding: 15px 30px;
+    gap: 10px;
+}
+
+.info-product .ingresar{
+    padding: 15px 10px;
+}
+
+/*viandasdia*/
+
+.item-viandas{
+    width: 250px;
+    height: 465px;
+}
+
+.lista-viandas{
+    flex-direction: row; 
+}
+
+.img-catalogo{
+    height: 200px;
+}
+
+/*masinfo*/
+.main-info{
+    height: 800px;
+    }
+    
+.lista-info{
+    margin-left: -800px;
+    }
+    
+.item-info{
+    width: 600px;
+    height: 320px;
+    }
+    
+.texto-masinfo{
+    font-size: 20px;
+    padding: 5px 15px 5px;
+    }
+
+  }
+  
